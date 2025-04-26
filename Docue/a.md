@@ -51,3 +51,5 @@ Info has park kind arch marry.
 Info has park kind arch land.
 
 Info is did.
+
+Info has major.
