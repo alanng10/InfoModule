@@ -57,3 +57,5 @@ Info has park cross.
 Info is did.
 
 Info has major.
+
+Info has major on noun.
