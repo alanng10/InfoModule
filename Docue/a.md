@@ -58,4 +58,4 @@ Info is did.
 
 Info has major.
 
-Info has major on noun. 
+Info has major on noun.
