@@ -4,7 +4,21 @@ class Any : InfraAny
     {
         base.Init();
         this.ListInfra : share ListInfra;
+
+        this.InitField();
         return true;
+    }
+
+    maide precate Bool InitField()
+    {
+        this.InitFieldStart();
+        this.InitFieldList();
+        this.InitFieldEnd();
+        return true;
+    }
+
+    maide precate Bool InitFieldList()
+    {
     }
 
     maide precate Bool InitFieldStart()
