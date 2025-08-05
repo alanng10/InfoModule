@@ -5,7 +5,7 @@ class Any : InfraAny
         base.Init();
         this.ListInfra : share ListInfra;
 
-        this.Field : this.ListInfra.ArrayCreate(this.Count); 
+        this.Field : this.ListInfra.ArrayCreate(this.Count);
         return true;
     }
 
