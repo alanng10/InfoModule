@@ -12,12 +12,12 @@ class Any : InfraAny
     maide precate Bool InitField()
     {
         this.InitFieldStart();
-        this.InitFieldList();
+        this.InitFieldItem();
         this.InitFieldEnd();
         return true;
     }
 
-    maide precate Bool InitFieldList()
+    maide precate Bool InitFieldItem()
     {
     }
 
