@@ -4,12 +4,30 @@ class Any : InfraAny
     {
         base.Init();
         this.ListInfra : share ListInfra;
-
-        this.Field : this.ListInfra.ArrayCreate(this.Count);
         return true;
     }
 
-    field prusate Int Count { get { return data; } set { data : value; } }
+    maide precate Bool InitFieldStart()
+    {
+        this.InitFieldList : new List;
+        this.InitFieldList.Init();
+        return true;
+    }
+
+    maide precate Bool InitFieldAdd(var Field item)
+    {
+        this.InitFieldList.Add(item);
+        return true;
+    }
+
+    maide precate Bool InitFieldEnd()
+    {
+        this.Field : this.ListInfra.ArrayCreateList(this.InitFieldList);
+        this.InitFieldList : null;
+        return true;
+    }
+
     field prusate Array Field { get { return data; } set { data : value; } }
     field precate ListInfra ListInfra { get { return data; } set { data : value; } }
+    field precate List InitFieldList { get { return data; } set { data : value; } }
 }
